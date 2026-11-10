@@ -1,0 +1,35 @@
+# ==========================================================
+# SafeSpace Git Ignore Configuration
+# ==========================================================
+
+# 1. Large Virtual Machine Images & Extracted Kernels
+# (Generated automatically via ./scripts/setup-vm-assets.sh)
+VMAssets/*.iso
+VMAssets/*.img
+VMAssets/*.qcow2
+VMAssets/boot/
+VMAssets/provisioner
+
+# 2. Ephemeral Sandbox Runtime & Uploaded Files
+Runtime/
+
+# 3. Compiled Binaries & Installer Packages
+SafeSpace.app/
+dist/
+build/
+.build/
+*.dmg
+*.exe
+*.zip
+
+# 4. macOS & IDE System Files
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+*.swp
+*~
+.vscode/
+.idea/
+*.xcodeproj/project.xcworkspace/
+*.xcodeproj/xcuserdata/
